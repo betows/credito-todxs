@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="language" content="pt-BR">
+    <title>Dev.Finance$</title>    
+
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/responsivity.css">
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/modal.css">
+    <link rel="stylesheet" href="./styles/form-modal.css">
+    <link rel="stylesheet" href="./styles/float-button.css">
+    <link rel="stylesheet" href="./styles/scrollbar.css">
+    <link rel="stylesheet" href="./styles/toast.css">
+    <link rel="stylesheet" href="./styles/animations.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1 style="color:white;">Crédito para todxs</h1>
+    </header>
+
+    <main class="container">
+        <section id="propose">
+            <h2 class="sr-only">Proposta</h2>
+            <div class="card">
+                <h3>
+                    <span>Valor</span>                   
+                </h3>
+                <p id="incomeDisplay">R$ 0,00</p>
+            </div>
+            <div class="card">
+                <h3>
+                    <span>Parcelas</span>
+                </h3>
+                <p id="expenseDisplay">R$ 0,00</p>
+            </div>
+            <div class="card total">
+                <h3>
+                    <span>Total pago</span>
+                </h3>
+                <p id="totalDisplay">R$ 0,00</p>
+            </div>
+        </section>
+        <section id="transaction">
+            <h2 class="sr-only">Parcelas</h2>
+            <table id="data-table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Valor</th>
+                        <th>Data</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+            <a href="./confirm.html"><button>Contratar</button></a>
+        </section>
+    </main>
+
+    <footer><small>© 2021 - Crédito para todxs</small></footer>
+
+    <script src="./scripts/index.js" type="text/javascript"></script>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-analytics.js"></script>
+
+    <script>
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      var firebaseConfig = {
+        apiKey: "AIzaSyACsu8pWaxRfoj8WiRpzI2Mo2vnSn8wVns",
+        authDomain: "devfinances777.firebaseapp.com",
+        projectId: "devfinances777",
+        storageBucket: "devfinances777.appspot.com",
+        messagingSenderId: "164547638392",
+        appId: "1:164547638392:web:5324d388a389684bafa98d",
+        measurementId: "G-VWV8XMYM95"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+    </script>
+</body>
+</html>
