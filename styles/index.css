@@ -111,19 +111,21 @@ button:hover {
     padding: 1.5rem 2rem;
     margin-bottom: 3rem;
 
-    border-radius: 0.25rem;
-    -webkit-border-radius: 0.25rem;
-    -moz-border-radius: 0.25rem;
-    -ms-border-radius: 0.25rem;
-    -o-border-radius: 0.25rem;
+    border-radius: 0.35rem;
+    -webkit-border-radius: 0.35rem;
+    -moz-border-radius: 0.35rem;
+    -ms-border-radius: 0.35rem;
+    -o-border-radius: 0.35rem;
+    text-align-last: center;
 }
 .card h3 {
     font-weight: normal;
     font-size: 1rem;
 
-    display: flex;
+   
     align-items: center;
     justify-content: space-between;
+    text-align-last: center;
 }
 .card p {
     font-weight: normal;
@@ -141,6 +143,42 @@ button:hover {
 .card.total.negative {
     background: var(--normal-red);
 }
+
+.card:hover {
+    transform: translateY(-10px) scale(1.010) translateZ(0);
+    background-color: rgb(248, 91, 157);
+    color:#fff;
+    
+   
+  
+  
+  }
+
+  .card:hover .credit-icon{
+      color: white;
+      text-align-last: left;
+      font-size: 40px;
+      display: flex;
+   
+  }
+
+  .card:hover .credit-description{
+    display:table;
+    visibility: visible;
+  }
+
+.credit-icon{
+    font-size: 80px;
+    color:rgb(248, 91, 157);
+    
+}
+
+.credit-description{
+  display: none;
+  visibility: hidden;
+   
+}
+
 
 
 /* Table */
