@@ -21,9 +21,9 @@
 }
 /* 5 */
 ::-webkit-scrollbar-thumb {
-    background: var(--light-green);   /*default: #dad7d7*/
+    background: rgb(248, 91, 157);   /*default: #dad7d7*/
 }
 /* 6 */
 ::-webkit-scrollbar-corner {
-    background: var(--background);
+    background: rgb(248, 91, 157);
 }

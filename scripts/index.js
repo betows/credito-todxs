@@ -46,7 +46,7 @@ const Form = {
             console.log("Ué")
             throw new Error("Por favor, preencha todos os campos!")
         }
-        if (parcel > amount) {
+        if (parseFloat(parcel)  > parseFloat (amount)) {
             throw new Error("Não é possível informar uma parcela maior que o valor solicitado!")
         }
     },

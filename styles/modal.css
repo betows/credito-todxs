@@ -15,6 +15,7 @@
     opacity: 0;
     visibility: hidden;
     z-index: 999;
+    
 }
 .modal-overlay.active {
     opacity: 1;
@@ -27,4 +28,11 @@
     position: relative;
     
     z-index: 1;
+
+    border: none;
+    border-radius: 0.25rem;
+    -webkit-border-radius: 0.25rem;
+    -moz-border-radius: 0.25rem;
+    -ms-border-radius: 0.25rem;
+    -o-border-radius: 0.25rem;
 }

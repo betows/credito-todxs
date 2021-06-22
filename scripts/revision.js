@@ -5,9 +5,24 @@ const Calculator = {
         var amount = parseFloat(urlParams.get('amount'));
         var parcel = parseFloat(urlParams.get('parcel'));
         var date = new Date(urlParams.get('date'));        
-        var credit_type = urlParams.get('credit_type');        
+        var credit_type = urlParams.get('credit_type');  
+        var juros = 1.20;
         
-        var juros = 1.20
+        if (credit_type == "credito-imobiliario")
+            juros = 1.04;
+        else if (credit_type == "financiamentos-de-veiculos")
+            juros = 1.07;
+        else if (credit_type == "credito-consignado")
+            juros = 1.12;
+        else if (credit_type == "limite-de-credito-pessoal")
+            juros = 1.10;
+        else if (credit_type == "credito-universitario")
+            juros = 1.03;
+        else if (credit_type == "cdc-material-de-construcao")
+            juros = 1.02;
+
+        
+        
 
         //Valor da ultima parcela para arredondamento
         var sobra = (amount*juros)%parcel;
@@ -23,13 +38,13 @@ const Calculator = {
 
             date = new Date(date.setMonth( date.getMonth() + 1 ))
         }
-
-        parcels.push({
-            id: i, 
-            parcel : sobra, 
-            date : date,
-        })
-
+        if (sobra > 0)[
+            parcels.push({
+                id: i, 
+                parcel : sobra, 
+                date : date,
+            })
+        ]
         return {parcels : parcels, amount : amount, parcel : parcel}
     },    
 }
@@ -138,5 +153,7 @@ const App = {
     }
 }
 App.init()
+
+
 
 

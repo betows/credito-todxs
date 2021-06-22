@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="language" content="pt-BR">
-    <title>Dev.Finance$</title>    
+    <title>Crédito para todx$</title>    
 
     <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
 
@@ -24,8 +24,11 @@
 
 <body>
     <header>
-        <a href="./index.html"><h1 style="color:white;">Crédito para todxs</h1>
-        </a>  
+        <div id="logo">
+           <a href=".\index.html"><img src=".\assets\icons\logo.png"   alt="logo">
+            </a> 
+        </div>
+
     </header>
 
     <main class="container">
@@ -94,7 +97,7 @@
                 <input type="hidden" id="credit_type" name="credit_type">
 
                 <h2>Solicitação de crédito</h2>
-                <small class="help-for-modal">Use vírgula para casas decimais</small>
+                <small class="help-for-modal">Digite o valor total desejado, valor das parcelas e data inicial de pagamento.</small>
                 <form action="" onsubmit="Form.submit(event)">
                     <div class="input-group">
                         <label for="amount">Valor</label>
@@ -112,6 +115,7 @@
                     <div class="input-group actions">
                         <a href="#" onclick="Modal.close()" class="button cancel">Cancelar</a>                        
                         <button type="submit">Simular</button>
+                        
                     </div>
                 </form>
             </div>
