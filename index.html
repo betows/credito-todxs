@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="language" content="pt-BR">
+    <title>Crédito para todx$</title>    
+
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/responsivity.css">
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/modal.css">
+    <link rel="stylesheet" href="./styles/form-modal.css">
+    <link rel="stylesheet" href="./styles/float-button.css">
+    <link rel="stylesheet" href="./styles/scrollbar.css">
+    <link rel="stylesheet" href="./styles/toast.css">
+    <link rel="stylesheet" href="./styles/animations.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+           <a href=".\index.html"><img src=".\assets\icons\logo.png"   alt="logo">
+            </a> 
+        </div>
+
+    </header>
+
+    <main class="container">
+        <section id="propose">
+            <h2 class="sr-only">Propostas</h2>
+            <a href="#" onclick="Modal.open('credito-imobiliario')">
+            <div class="card">
+                <h3>
+                    <span>Crédito Imobiliario</span>                    
+                </h3>
+                <i class="fa fa-home credit-icon" aria-hidden="true"></i>
+                <p class="credit-description">Juros de 4% ao mês</p>
+            </div>
+            </a>
+            <a href="#" onclick="Modal.open('financiamentos-de-veiculos')">
+            <div class="card">
+                <h3>
+                    <span>Financiamento de Veículos</span>                    
+                </h3>
+                <i class="fa fa-car credit-icon" aria-hidden="true"></i>
+                <p class="credit-description">Juros de 7% ao mês</p>
+            </div>
+            </a>
+            <a href="#" onclick="Modal.open('credito-consignado')">
+            <div class="card">
+                <h3>
+                    <span>Crédito Consignado</span>                    
+                </h3>
+                <i class="fa fa-briefcase credit-icon" aria-hidden="true"></i>
+                <p class="credit-description">Juros de 12% ao mês</p>
+            </div>
+            </a>
+            <a href="#" onclick="Modal.open('limite-de-credito-pessoal')">
+            <div class="card">
+                <h3>
+                    <span>Limite de Crédito Pessoal</span>                    
+                </h3>
+                <i class="fa fa-user credit-icon" aria-hidden="true"></i>
+                <p class="credit-description">Juros de 10% ao mês</p>
+            </div>
+            </a>
+            <a href="#" onclick="Modal.open('credito-universitario')">
+            <div class="card">
+                <h3>
+                    <span>Crédito Universitário</span>
+                </h3>
+                <i class="fa fa-graduation-cap credit-icon" aria-hidden="true"></i>
+                <p class="credit-description">Juros de 3% ao mês</p>
+            </div>
+            </a>
+            <a href="#" onclick="Modal.open('cdc-material-de-construcao')">
+            <div class="card">
+                <h3>
+                    <span>Material de Construção</span>
+                </h3>
+                <i class="fa fa-paint-brush credit-icon" aria-hidden="true"></i>
+                <p class="credit-description">juros de 2% ao mês</p>
+            </div>
+            </a>
+        </section>
+    </main>
+
+    <div class="modal-overlay">
+        <div class="modal">
+            <div id="form">
+                <input type="hidden" id="credit_type" name="credit_type">
+
+                <h2>Solicitação de crédito</h2>
+                <small class="help-for-modal">Digite o valor total desejado, valor das parcelas e data inicial de pagamento.</small>
+                <form action="" onsubmit="Form.submit(event)">
+                    <div class="input-group">
+                        <label for="amount">Valor</label>
+                        <input type="number" id="amount" name="amount" placeholder="0,00" step="1">
+                    </div>
+                    <div class="input-group">
+                        <label for="parcel">Valor da parcela</label>
+                        <input type="number" id="parcel" name="parcel" placeholder="0,00" step="1">
+                    </div>
+                    <div class="input-group">
+                        <label for="date">Data primeira parcela</label>
+                        <input type="date" id="date" name="date">
+                    </div>
+
+                    <div class="input-group actions">
+                        <a href="#" onclick="Modal.close()" class="button cancel">Cancelar</a>                        
+                        <button type="submit">Simular</button>
+                        
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="toast">
+        <div class="img"><h1>×</h1></div>
+        <div class="description">Por favor, preencha todos os campos!</div>
+    </div>
+
+    <footer><small>© 2021 - Crédito para todxs</small></footer>
+
+    <script src="./scripts/index.js" type="text/javascript"></script>
+</body>
+</html>
