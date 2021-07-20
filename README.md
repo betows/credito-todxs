@@ -1,6 +1,6 @@
 # credito-todxs
 
-![Screenshot projeto](./assets/gif.WEBM)
+![Screenshot projeto](./assets/video.gif)
 Projeto com a proposta de oferecer crédito, aplicar juros e separar os meses para pagamento de forma rápida e pratica.
 
 Escolha a proposta ideal para a sua situação e realize uma simulação para descobrir se o serviço atende suas necessidades
